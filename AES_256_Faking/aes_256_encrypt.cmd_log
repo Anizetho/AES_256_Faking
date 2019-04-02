@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "C:/Users/Anizetho/Documents/ISE/AES_256/aes_256_encrypt.xst" -ofn "C:/Users/Anizetho/Documents/ISE/AES_256/aes_256_encrypt.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx75-csg484-3 aes_256_encrypt.ngc aes_256_encrypt.ngd  
+map -intstyle ise -p xc6slx75-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o aes_256_encrypt_map.ncd aes_256_encrypt.ngd aes_256_encrypt.pcf 
+xst -intstyle ise -ifn "C:/Users/Anizetho/Documents/ISE/AES_256/aes_256_encrypt.xst" -ofn "C:/Users/Anizetho/Documents/ISE/AES_256/aes_256_encrypt.syr" 

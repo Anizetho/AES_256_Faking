@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">sub_byte_instance/Mram_state[15]_GND_8_o_wide_mux_14_OUT</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">sub_byte_instance/Mram_state[7]_GND_8_o_wide_mux_15_OUT</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">sub_byte_instance/Mram_state[23]_GND_8_o_wide_mux_13_OUT</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">sub_byte_instance/Mram_state[39]_GND_8_o_wide_mux_11_OUT</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">sub_byte_instance/Mram_state[31]_GND_8_o_wide_mux_12_OUT</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">sub_byte_instance/Mram_state[47]_GND_8_o_wide_mux_10_OUT</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">sub_byte_instance/Mram_state[55]_GND_8_o_wide_mux_9_OUT</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">sub_byte_instance/Mram_state[63]_GND_8_o_wide_mux_8_OUT</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">sub_byte_instance/Mram_state[79]_GND_8_o_wide_mux_6_OUT</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">sub_byte_instance/Mram_state[71]_GND_8_o_wide_mux_7_OUT</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">sub_byte_instance/Mram_state[87]_GND_8_o_wide_mux_5_OUT</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">sub_byte_instance/Mram_state[103]_GND_8_o_wide_mux_3_OUT</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">sub_byte_instance/Mram_state[95]_GND_8_o_wide_mux_4_OUT</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">sub_byte_instance/Mram_state[111]_GND_8_o_wide_mux_2_OUT</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">sub_byte_instance/Mram_state[127]_GND_8_o_wide_mux_0_OUT</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="info" file="Xst" num="3226" delta="old" >The RAM &lt;<arg fmt="%s" index="1">sub_byte_instance/Mram_state[119]_GND_8_o_wide_mux_1_OUT</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_w7[23]_GND_13_o_wide_mux_8_OUT</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_w7[15]_GND_13_o_wide_mux_12_OUT</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_w7[7]_GND_13_o_wide_mux_14_OUT</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_w7[31]_GND_13_o_wide_mux_16_OUT</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_tmp[159]_GND_13_o_wide_mux_21_OUT</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_tmp[151]_GND_13_o_wide_mux_23_OUT</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_tmp[143]_GND_13_o_wide_mux_25_OUT</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_tmp[135]_GND_13_o_wide_mux_27_OUT</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram__n0313</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram__n0570</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram__n0827</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram__n1084</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="2697" delta="old" >Unit &lt;<arg fmt="%s" index="1">MTP_</arg>&gt; : the RAMs &lt;<arg fmt="%s" index="2">sub_byte_instance/Mram_state[15]_GND_8_o_wide_mux_14_OUT</arg>&gt;, &lt;<arg fmt="%s" index="3">sub_byte_instance/Mram_state[7]_GND_8_o_wide_mux_15_OUT</arg>&gt; are packed into the single block RAM &lt;<arg fmt="%s" index="4">sub_byte_instance/Mram_state[15]_GND_8_o_wide_mux_14_OUT1</arg>&gt;
+</msg>
+
+<msg type="info" file="Xst" num="2697" delta="old" >Unit &lt;<arg fmt="%s" index="1">MTP_</arg>&gt; : the RAMs &lt;<arg fmt="%s" index="2">sub_byte_instance/Mram_state[23]_GND_8_o_wide_mux_13_OUT</arg>&gt;, &lt;<arg fmt="%s" index="3">sub_byte_instance/Mram_state[39]_GND_8_o_wide_mux_11_OUT</arg>&gt; are packed into the single block RAM &lt;<arg fmt="%s" index="4">sub_byte_instance/Mram_state[23]_GND_8_o_wide_mux_13_OUT1</arg>&gt;
+</msg>
+
+<msg type="info" file="Xst" num="2697" delta="old" >Unit &lt;<arg fmt="%s" index="1">MTP_</arg>&gt; : the RAMs &lt;<arg fmt="%s" index="2">sub_byte_instance/Mram_state[31]_GND_8_o_wide_mux_12_OUT</arg>&gt;, &lt;<arg fmt="%s" index="3">sub_byte_instance/Mram_state[47]_GND_8_o_wide_mux_10_OUT</arg>&gt; are packed into the single block RAM &lt;<arg fmt="%s" index="4">sub_byte_instance/Mram_state[31]_GND_8_o_wide_mux_12_OUT1</arg>&gt;
+</msg>
+
+<msg type="info" file="Xst" num="2697" delta="old" >Unit &lt;<arg fmt="%s" index="1">MTP_</arg>&gt; : the RAMs &lt;<arg fmt="%s" index="2">sub_byte_instance/Mram_state[55]_GND_8_o_wide_mux_9_OUT</arg>&gt;, &lt;<arg fmt="%s" index="3">sub_byte_instance/Mram_state[63]_GND_8_o_wide_mux_8_OUT</arg>&gt; are packed into the single block RAM &lt;<arg fmt="%s" index="4">sub_byte_instance/Mram_state[55]_GND_8_o_wide_mux_9_OUT1</arg>&gt;
+</msg>
+
+<msg type="info" file="Xst" num="2697" delta="old" >Unit &lt;<arg fmt="%s" index="1">MTP_</arg>&gt; : the RAMs &lt;<arg fmt="%s" index="2">sub_byte_instance/Mram_state[79]_GND_8_o_wide_mux_6_OUT</arg>&gt;, &lt;<arg fmt="%s" index="3">sub_byte_instance/Mram_state[71]_GND_8_o_wide_mux_7_OUT</arg>&gt; are packed into the single block RAM &lt;<arg fmt="%s" index="4">sub_byte_instance/Mram_state[79]_GND_8_o_wide_mux_6_OUT1</arg>&gt;
+</msg>
+
+<msg type="info" file="Xst" num="2697" delta="old" >Unit &lt;<arg fmt="%s" index="1">MTP_</arg>&gt; : the RAMs &lt;<arg fmt="%s" index="2">sub_byte_instance/Mram_state[87]_GND_8_o_wide_mux_5_OUT</arg>&gt;, &lt;<arg fmt="%s" index="3">sub_byte_instance/Mram_state[103]_GND_8_o_wide_mux_3_OUT</arg>&gt; are packed into the single block RAM &lt;<arg fmt="%s" index="4">sub_byte_instance/Mram_state[87]_GND_8_o_wide_mux_5_OUT1</arg>&gt;
+</msg>
+
+<msg type="info" file="Xst" num="2697" delta="old" >Unit &lt;<arg fmt="%s" index="1">MTP_</arg>&gt; : the RAMs &lt;<arg fmt="%s" index="2">sub_byte_instance/Mram_state[95]_GND_8_o_wide_mux_4_OUT</arg>&gt;, &lt;<arg fmt="%s" index="3">sub_byte_instance/Mram_state[111]_GND_8_o_wide_mux_2_OUT</arg>&gt; are packed into the single block RAM &lt;<arg fmt="%s" index="4">sub_byte_instance/Mram_state[95]_GND_8_o_wide_mux_4_OUT1</arg>&gt;
+</msg>
+
+<msg type="info" file="Xst" num="2697" delta="old" >Unit &lt;<arg fmt="%s" index="1">MTP_</arg>&gt; : the RAMs &lt;<arg fmt="%s" index="2">sub_byte_instance/Mram_state[127]_GND_8_o_wide_mux_0_OUT</arg>&gt;, &lt;<arg fmt="%s" index="3">sub_byte_instance/Mram_state[119]_GND_8_o_wide_mux_1_OUT</arg>&gt; are packed into the single block RAM &lt;<arg fmt="%s" index="4">sub_byte_instance/Mram_state[127]_GND_8_o_wide_mux_0_OUT1</arg>&gt;
+</msg>
+
+<msg type="warning" file="Xst" num="1336" delta="old" > (*) More than 100% of Device resources are used
+</msg>
+
+</messages>
+
