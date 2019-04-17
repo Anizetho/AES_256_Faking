@@ -1,0 +1,19 @@
+xst -intstyle ise -ifn "C:/Users/Anizetho/Documents/ISE/AES_256_Faking/main_fpga_aes_256.xst" -ofn "C:/Users/Anizetho/Documents/ISE/AES_256_Faking/main_fpga_aes_256.syr" 
+xst -intstyle ise -ifn "C:/Users/Anizetho/Documents/ISE/AES_256_Faking/main_fpga_aes_256.xst" -ofn "C:/Users/Anizetho/Documents/ISE/AES_256_Faking/main_fpga_aes_256.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc main_fpga_aes_256.ucf -p xc6slx75-csg484-3 main_fpga_aes_256.ngc main_fpga_aes_256.ngd  
+map -intstyle ise -p xc6slx75-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_fpga_aes_256_map.ncd main_fpga_aes_256.ngd main_fpga_aes_256.pcf 
+par -w -intstyle ise -ol high -mt off main_fpga_aes_256_map.ncd main_fpga_aes_256.ncd main_fpga_aes_256.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml main_fpga_aes_256.twx main_fpga_aes_256.ncd -o main_fpga_aes_256.twr main_fpga_aes_256.pcf -ucf main_fpga_aes_256.ucf 
+bitgen -intstyle ise -f main_fpga_aes_256.ut main_fpga_aes_256.ncd 
+xst -intstyle ise -ifn "C:/Users/Anizetho/Documents/ISE/AES_256_Faking/main_fpga_aes_256.xst" -ofn "C:/Users/Anizetho/Documents/ISE/AES_256_Faking/main_fpga_aes_256.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc main_fpga_aes_256.ucf -p xc6slx75-csg484-3 main_fpga_aes_256.ngc main_fpga_aes_256.ngd  
+map -intstyle ise -p xc6slx75-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_fpga_aes_256_map.ncd main_fpga_aes_256.ngd main_fpga_aes_256.pcf 
+par -w -intstyle ise -ol high -mt off main_fpga_aes_256_map.ncd main_fpga_aes_256.ncd main_fpga_aes_256.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml main_fpga_aes_256.twx main_fpga_aes_256.ncd -o main_fpga_aes_256.twr main_fpga_aes_256.pcf -ucf main_fpga_aes_256.ucf 
+bitgen -intstyle ise -f main_fpga_aes_256.ut main_fpga_aes_256.ncd 
+xst -intstyle ise -ifn "C:/Users/Anizetho/Documents/ISE/AES_256_Faking/main_fpga_aes_256.xst" -ofn "C:/Users/Anizetho/Documents/ISE/AES_256_Faking/main_fpga_aes_256.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc main_fpga_aes_256.ucf -p xc6slx75-csg484-3 main_fpga_aes_256.ngc main_fpga_aes_256.ngd  
+map -intstyle ise -p xc6slx75-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o main_fpga_aes_256_map.ncd main_fpga_aes_256.ngd main_fpga_aes_256.pcf 
+par -w -intstyle ise -ol high -mt off main_fpga_aes_256_map.ncd main_fpga_aes_256.ncd main_fpga_aes_256.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml main_fpga_aes_256.twx main_fpga_aes_256.ncd -o main_fpga_aes_256.twr main_fpga_aes_256.pcf -ucf main_fpga_aes_256.ucf 
+bitgen -intstyle ise -f main_fpga_aes_256.ut main_fpga_aes_256.ncd 

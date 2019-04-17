@@ -9,6 +9,7 @@ entity top_key_scheduler_256 is
 				rst 			: in  std_logic;
 				start 		: in  std_logic;
 				key_256 		: in  std_logic_vector(255 downto 0);
+				key_Mask 	: in  std_logic_vector(255 downto 0);
 				keyExpanded : out keyExpand;
 				done 			: out std_logic);
 end top_key_scheduler_256;
@@ -54,9 +55,9 @@ begin
 									if start = '1' then
 										counter <= (others => '0');
 										cr_state <= WORKING;
-										round_key_in <= key_256;
+										round_key_in <= key_256 XOR key_Mask;
 										keyExpanded <= (others => (others => '0'));
-										keyExpanded(conv_integer(0)) <= key_256;
+										keyExpanded(conv_integer(0)) <= key_256 XOR key_Mask;
 									else
 										cr_state <= IDLE;
 									end if;

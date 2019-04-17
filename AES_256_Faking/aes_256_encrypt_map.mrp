@@ -11,7 +11,7 @@ Target Device  : xc6slx75
 Target Package : csg484
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Tue Feb 19 15:46:01 2019
+Mapped Date    : Tue Apr 16 22:17:02 2019
 
 Interim Summary
 ---------------
@@ -21,20 +21,20 @@ Slice Logic Utilization:
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                      2,131 out of  46,648    4%
-    Number used as logic:                    2,131 out of  46,648    4%
-      Number using O6 output only:           1,894
+  Number of Slice LUTs:                      2,304 out of  46,648    4%
+    Number used as logic:                    2,304 out of  46,648    4%
+      Number using O6 output only:           1,990
       Number using O5 output only:               0
-      Number using O5 and O6:                  237
+      Number using O5 and O6:                  314
       Number used as ROM:                        0
     Number used as Memory:                       0 out of  11,072    0%
 
 Slice Logic Distribution:
   Number of MUXCYs used:                         0 out of  23,324    0%
-  Number of LUT Flip Flop pairs used:        4,180
-    Number with an unused Flip Flop:         1,312 out of   4,180   31%
-    Number with an unused LUT:               2,049 out of   4,180   49%
-    Number of fully used LUT-FF pairs:         819 out of   4,180   19%
+  Number of LUT Flip Flop pairs used:        4,353
+    Number with an unused Flip Flop:         1,507 out of   4,353   34%
+    Number with an unused LUT:               2,049 out of   4,353   47%
+    Number of fully used LUT-FF pairs:         797 out of   4,353   18%
     Number of unique control sets:              18
     Number of slice register sites lost
       to control set restrictions:              28 out of  93,296    1%
@@ -46,7 +46,7 @@ Slice Logic Distribution:
   over-mapped for a non-slice resource or if Placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                       516 out of     328  157% (OVERMAPPED)
+  Number of bonded IOBs:                       772 out of     328  235% (OVERMAPPED)
 
 Specific Feature Utilization:
   Number of RAMB16BWERs:                         0 out of     172    0%

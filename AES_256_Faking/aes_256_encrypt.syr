@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.30 secs
+Total CPU time to Xst completion: 0.22 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.30 secs
+Total CPU time to Xst completion: 0.22 secs
  
 --> Reading design: aes_256_encrypt.prj
 
@@ -105,30 +105,30 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "C:\Users\Anizetho\Documents\ISE\AES_256\aes_256_package.vhd" into library work
+Parsing VHDL file "C:\Users\Anizetho\Documents\ISE\AES_256_Faking\aes_256_package.vhd" into library work
 Parsing package <aes_256_package>.
-Parsing VHDL file "C:\Users\Anizetho\Documents\ISE\AES_256\mix_column_aux.vhd" into library work
+Parsing VHDL file "C:\Users\Anizetho\Documents\ISE\AES_256_Faking\mix_column_aux.vhd" into library work
 Parsing entity <mix_column_aux>.
 Parsing architecture <behavioral> of entity <mix_column_aux>.
-Parsing VHDL file "C:\Users\Anizetho\Documents\ISE\AES_256\key_scheduler_256.vhd" into library work
+Parsing VHDL file "C:\Users\Anizetho\Documents\ISE\AES_256_Faking\key_scheduler_256.vhd" into library work
 Parsing entity <key_scheduler_256>.
 Parsing architecture <behavioral> of entity <key_scheduler_256>.
-Parsing VHDL file "C:\Users\Anizetho\Documents\ISE\AES_256\top_key_scheduler_256.vhd" into library work
+Parsing VHDL file "C:\Users\Anizetho\Documents\ISE\AES_256_Faking\top_key_scheduler_256.vhd" into library work
 Parsing entity <top_key_scheduler_256>.
 Parsing architecture <behavioral> of entity <top_key_scheduler_256>.
-Parsing VHDL file "C:\Users\Anizetho\Documents\ISE\AES_256\sub_byte.vhd" into library work
+Parsing VHDL file "C:\Users\Anizetho\Documents\ISE\AES_256_Faking\sub_byte.vhd" into library work
 Parsing entity <sub_byte>.
 Parsing architecture <behavioral> of entity <sub_byte>.
-Parsing VHDL file "C:\Users\Anizetho\Documents\ISE\AES_256\shift_rows.vhd" into library work
+Parsing VHDL file "C:\Users\Anizetho\Documents\ISE\AES_256_Faking\shift_rows.vhd" into library work
 Parsing entity <shift_rows>.
 Parsing architecture <behavioral> of entity <shift_rows>.
-Parsing VHDL file "C:\Users\Anizetho\Documents\ISE\AES_256\mix_column.vhd" into library work
+Parsing VHDL file "C:\Users\Anizetho\Documents\ISE\AES_256_Faking\mix_column.vhd" into library work
 Parsing entity <mix_column>.
 Parsing architecture <behavioral> of entity <mix_column>.
-Parsing VHDL file "C:\Users\Anizetho\Documents\ISE\AES_256\add_round_key.vhd" into library work
+Parsing VHDL file "C:\Users\Anizetho\Documents\ISE\AES_256_Faking\add_round_key.vhd" into library work
 Parsing entity <add_round_key>.
 Parsing architecture <behavioral> of entity <add_round_key>.
-Parsing VHDL file "C:\Users\Anizetho\Documents\ISE\AES_256\aes_256_encrypt.vhd" into library work
+Parsing VHDL file "C:\Users\Anizetho\Documents\ISE\AES_256_Faking\aes_256_encrypt.vhd" into library work
 Parsing entity <aes_256_encrypt>.
 Parsing architecture <Behavioral> of entity <aes_256_encrypt>.
 
@@ -151,15 +151,15 @@ Elaborating entity <mix_column_aux> (architecture <behavioral>) from library <wo
 Elaborating entity <top_key_scheduler_256> (architecture <behavioral>) from library <work>.
 
 Elaborating entity <key_scheduler_256> (architecture <behavioral>) from library <work>.
-INFO:HDLCompiler:679 - "C:\Users\Anizetho\Documents\ISE\AES_256\top_key_scheduler_256.vhd" Line 75. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Anizetho\Documents\ISE\AES_256\aes_256_encrypt.vhd" Line 230. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Anizetho\Documents\ISE\AES_256_Faking\top_key_scheduler_256.vhd" Line 76. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "C:\Users\Anizetho\Documents\ISE\AES_256_Faking\aes_256_encrypt.vhd" Line 242. Case statement is complete. others clause is never selected
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <aes_256_encrypt>.
-    Related source file is "C:\Users\Anizetho\Documents\ISE\AES_256\aes_256_encrypt.vhd".
+    Related source file is "C:\Users\Anizetho\Documents\ISE\AES_256_Faking\aes_256_encrypt.vhd".
     Found 128-bit register for signal <ciphertext>.
     Found 4-bit register for signal <count_round>.
     Found 2-bit register for signal <count_op>.
@@ -181,10 +181,10 @@ Synthesizing Unit <aes_256_encrypt>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 4-bit adder for signal <count_round[3]_GND_6_o_add_12_OUT> created at line 209.
-    Found 2-bit adder for signal <count_op[1]_GND_6_o_add_20_OUT> created at line 216.
-    Found 256-bit 8-to-1 multiplexer for signal <n0068> created at line 162.
-    Found 128-bit 4-to-1 multiplexer for signal <ark_in> created at line 165.
+    Found 4-bit adder for signal <count_round[3]_GND_6_o_add_12_OUT> created at line 220.
+    Found 2-bit adder for signal <count_op[1]_GND_6_o_add_20_OUT> created at line 228.
+    Found 256-bit 8-to-1 multiplexer for signal <n0069> created at line 166.
+    Found 128-bit 4-to-1 multiplexer for signal <ark_in> created at line 169.
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred 141 D-type flip-flop(s).
@@ -193,7 +193,7 @@ Synthesizing Unit <aes_256_encrypt>.
 Unit <aes_256_encrypt> synthesized.
 
 Synthesizing Unit <add_round_key>.
-    Related source file is "C:\Users\Anizetho\Documents\ISE\AES_256\add_round_key.vhd".
+    Related source file is "C:\Users\Anizetho\Documents\ISE\AES_256_Faking\add_round_key.vhd".
     Found 128-bit register for signal <result>.
     Summary:
 	inferred 128 D-type flip-flop(s).
@@ -201,7 +201,7 @@ Synthesizing Unit <add_round_key>.
 Unit <add_round_key> synthesized.
 
 Synthesizing Unit <sub_byte>.
-    Related source file is "C:\Users\Anizetho\Documents\ISE\AES_256\sub_byte.vhd".
+    Related source file is "C:\Users\Anizetho\Documents\ISE\AES_256_Faking\sub_byte.vhd".
     Found 128-bit register for signal <result>.
     Found 256x8-bit Read Only RAM for signal <state[127]_GND_8_o_wide_mux_0_OUT>
     Found 256x8-bit Read Only RAM for signal <state[119]_GND_8_o_wide_mux_1_OUT>
@@ -226,20 +226,20 @@ Synthesizing Unit <sub_byte>.
 Unit <sub_byte> synthesized.
 
 Synthesizing Unit <shift_rows>.
-    Related source file is "C:\Users\Anizetho\Documents\ISE\AES_256\shift_rows.vhd".
+    Related source file is "C:\Users\Anizetho\Documents\ISE\AES_256_Faking\shift_rows.vhd".
     Found 128-bit register for signal <result>.
     Summary:
 	inferred 128 D-type flip-flop(s).
 Unit <shift_rows> synthesized.
 
 Synthesizing Unit <mix_column>.
-    Related source file is "C:\Users\Anizetho\Documents\ISE\AES_256\mix_column.vhd".
+    Related source file is "C:\Users\Anizetho\Documents\ISE\AES_256_Faking\mix_column.vhd".
     Summary:
 	no macro.
 Unit <mix_column> synthesized.
 
 Synthesizing Unit <mix_column_aux>.
-    Related source file is "C:\Users\Anizetho\Documents\ISE\AES_256\mix_column_aux.vhd".
+    Related source file is "C:\Users\Anizetho\Documents\ISE\AES_256_Faking\mix_column_aux.vhd".
     Found 32-bit register for signal <result>.
     Found 256x16-bit Read Only RAM for signal <_n0313>
     Found 256x16-bit Read Only RAM for signal <_n0570>
@@ -251,7 +251,7 @@ Synthesizing Unit <mix_column_aux>.
 Unit <mix_column_aux> synthesized.
 
 Synthesizing Unit <top_key_scheduler_256>.
-    Related source file is "C:\Users\Anizetho\Documents\ISE\AES_256\top_key_scheduler_256.vhd".
+    Related source file is "C:\Users\Anizetho\Documents\ISE\AES_256_Faking\top_key_scheduler_256.vhd".
     Found 1-bit register for signal <cr_state>.
     Found 1-bit register for signal <done>.
     Found 256-bit register for signal <round_key_in>.
@@ -264,8 +264,8 @@ Synthesizing Unit <top_key_scheduler_256>.
     Found 256-bit register for signal <keyExpanded<6>>.
     Found 256-bit register for signal <keyExpanded<7>>.
     Found 3-bit register for signal <counter>.
-    Found 3-bit adder for signal <counter[2]_GND_12_o_add_14_OUT> created at line 73.
-    Found 3-bit comparator greater for signal <counter[2]_PWR_12_o_LessThan_14_o> created at line 71
+    Found 3-bit adder for signal <counter[2]_GND_12_o_add_16_OUT> created at line 74.
+    Found 3-bit comparator greater for signal <counter[2]_PWR_12_o_LessThan_16_o> created at line 72
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred 2309 D-type flip-flop(s).
@@ -274,7 +274,7 @@ Synthesizing Unit <top_key_scheduler_256>.
 Unit <top_key_scheduler_256> synthesized.
 
 Synthesizing Unit <key_scheduler_256>.
-    Related source file is "C:\Users\Anizetho\Documents\ISE\AES_256\key_scheduler_256.vhd".
+    Related source file is "C:\Users\Anizetho\Documents\ISE\AES_256_Faking\key_scheduler_256.vhd".
     Found 256x8-bit Read Only RAM for signal <w7[23]_GND_13_o_wide_mux_8_OUT>
     Found 256x8-bit Read Only RAM for signal <w7[15]_GND_13_o_wide_mux_12_OUT>
     Found 256x8-bit Read Only RAM for signal <w7[7]_GND_13_o_wide_mux_14_OUT>
@@ -317,8 +317,9 @@ Macro Statistics
  3-bit 2-to-1 multiplexer                              : 1
  4-bit 2-to-1 multiplexer                              : 5
 # FSMs                                                 : 1
-# Xors                                                 : 32
+# Xors                                                 : 33
  128-bit xor2                                          : 1
+ 256-bit xor2                                          : 1
  32-bit xor2                                           : 6
  8-bit xor2                                            : 9
  8-bit xor4                                            : 16
@@ -738,8 +739,9 @@ Macro Statistics
  3-bit 2-to-1 multiplexer                              : 1
  4-bit 2-to-1 multiplexer                              : 4
 # FSMs                                                 : 1
-# Xors                                                 : 32
+# Xors                                                 : 33
  128-bit xor2                                          : 1
+ 256-bit xor2                                          : 1
  32-bit xor2                                           : 6
  8-bit xor2                                            : 9
  8-bit xor4                                            : 16
@@ -810,13 +812,13 @@ Top Level Output File Name         : aes_256_encrypt.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 2930
+# BELS                             : 2994
 #      GND                         : 1
 #      LUT2                        : 370
-#      LUT3                        : 200
-#      LUT4                        : 331
-#      LUT5                        : 450
-#      LUT6                        : 1129
+#      LUT3                        : 180
+#      LUT4                        : 306
+#      LUT5                        : 496
+#      LUT6                        : 1192
 #      MUXF7                       : 384
 #      MUXF8                       : 64
 #      VCC                         : 1
@@ -828,8 +830,8 @@ Primitive and Black Box Usage:
 #      RAMB8BWER                   : 8
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 515
-#      IBUF                        : 386
+# IO Buffers                       : 771
+#      IBUF                        : 642
 #      OBUF                        : 129
 
 Device utilization summary:
@@ -840,19 +842,19 @@ Selected Device : 6slx75csg484-3
 
 Slice Logic Utilization: 
  Number of Slice Registers:            2964  out of  93296     3%  
- Number of Slice LUTs:                 2480  out of  46648     5%  
-    Number used as Logic:              2480  out of  46648     5%  
+ Number of Slice LUTs:                 2544  out of  46648     5%  
+    Number used as Logic:              2544  out of  46648     5%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   3993
-   Number with an unused Flip Flop:    1029  out of   3993    25%  
-   Number with an unused LUT:          1513  out of   3993    37%  
-   Number of fully used LUT-FF pairs:  1451  out of   3993    36%  
+ Number of LUT Flip Flop pairs used:   4025
+   Number with an unused Flip Flop:    1061  out of   4025    26%  
+   Number with an unused LUT:          1481  out of   4025    36%  
+   Number of fully used LUT-FF pairs:  1483  out of   4025    36%  
    Number of unique control sets:        18
 
 IO Utilization: 
- Number of IOs:                         516
- Number of bonded IOBs:                 516  out of    328   157% (*) 
+ Number of IOs:                         772
+ Number of bonded IOBs:                 772  out of    328   235% (*) 
 
 Specific Feature Utilization:
  Number of Block RAM/FIFO:                4  out of    172     2%  
@@ -893,7 +895,7 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 7.170ns (Maximum Frequency: 139.461MHz)
+   Minimum period: 7.114ns (Maximum Frequency: 140.561MHz)
    Minimum input arrival time before clock: 6.762ns
    Maximum output required time after clock: 3.634ns
    Maximum combinational path delay: No path found
@@ -904,10 +906,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 7.170ns (frequency: 139.461MHz)
+  Clock period: 7.114ns (frequency: 140.561MHz)
   Total number of paths / destination ports: 1044798 / 7587
 -------------------------------------------------------------------------
-Delay:               7.170ns (Levels of Logic = 8)
+Delay:               7.114ns (Levels of Logic = 8)
   Source:            top_key_scheduler_256_instance/round_key_in_11 (FF)
   Destination:       top_key_scheduler_256_instance/keyExpanded_7_119 (FF)
   Source Clock:      clk rising
@@ -920,7 +922,7 @@ Delay:               7.170ns (Levels of Logic = 8)
      FDRE:C->Q            35   0.447   1.699  top_key_scheduler_256_instance/round_key_in_11 (top_key_scheduler_256_instance/round_key_in_11)
      LUT6:I0->O            1   0.203   0.000  top_key_scheduler_256_instance/key_scheduler_256_instance_Mram_w7[15]_GND_13_o_wide_mux_12_OUT8 (top_key_scheduler_256_instance/key_scheduler_256_instance_Mram_w7[15]_GND_13_o_wide_mux_12_OUT8)
      MUXF7:I1->O           1   0.140   0.000  top_key_scheduler_256_instance/key_scheduler_256_instance_Mram_w7[15]_GND_13_o_wide_mux_12_OUT8_f7 (top_key_scheduler_256_instance/key_scheduler_256_instance_Mram_w7[15]_GND_13_o_wide_mux_12_OUT8_f7)
-     MUXF8:I1->O           9   0.152   0.830  top_key_scheduler_256_instance/key_scheduler_256_instance_Mram_w7[15]_GND_13_o_wide_mux_12_OUT8_f8 (top_key_scheduler_256_instance/key_scheduler_256_instance/w7[15]_GND_13_o_wide_mux_12_OUT<4>)
+     MUXF8:I1->O           7   0.152   0.774  top_key_scheduler_256_instance/key_scheduler_256_instance_Mram_w7[15]_GND_13_o_wide_mux_12_OUT8_f8 (top_key_scheduler_256_instance/key_scheduler_256_instance/w7[15]_GND_13_o_wide_mux_12_OUT<4>)
      LUT5:I4->O           41   0.205   1.784  top_key_scheduler_256_instance/key_scheduler_256_instance/tmp<148>1 (top_key_scheduler_256_instance/round_key_out<148>)
      LUT6:I0->O            1   0.203   0.000  top_key_scheduler_256_instance/key_scheduler_256_instance_Mram_tmp[151]_GND_13_o_wide_mux_23_OUT6 (top_key_scheduler_256_instance/key_scheduler_256_instance_Mram_tmp[151]_GND_13_o_wide_mux_23_OUT6)
      MUXF7:I1->O           1   0.140   0.000  top_key_scheduler_256_instance/key_scheduler_256_instance_Mram_tmp[151]_GND_13_o_wide_mux_23_OUT6_f7 (top_key_scheduler_256_instance/key_scheduler_256_instance_Mram_tmp[151]_GND_13_o_wide_mux_23_OUT6_f7)
@@ -928,12 +930,12 @@ Delay:               7.170ns (Levels of Logic = 8)
      LUT2:I1->O            7   0.205   0.000  top_key_scheduler_256_instance/key_scheduler_256_instance/tmp<115>1 (top_key_scheduler_256_instance/round_key_out<115>)
      FDRE:D                    0.102          top_key_scheduler_256_instance/keyExpanded_1_115
     ----------------------------------------
-    Total                      7.170ns (1.949ns logic, 5.221ns route)
-                                       (27.2% logic, 72.8% route)
+    Total                      7.114ns (1.949ns logic, 5.165ns route)
+                                       (27.4% logic, 72.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 7961 / 5785
+  Total number of paths / destination ports: 8473 / 5785
 -------------------------------------------------------------------------
 Offset:              6.762ns (Levels of Logic = 2)
   Source:            rst (PAD)
@@ -980,18 +982,18 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    7.170|         |         |         |
+clk            |    7.114|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 20.00 secs
-Total CPU time to Xst completion: 20.38 secs
+Total REAL time to Xst completion: 19.00 secs
+Total CPU time to Xst completion: 18.91 secs
  
 --> 
 
-Total memory usage is 4546972 kilobytes
+Total memory usage is 4545388 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)

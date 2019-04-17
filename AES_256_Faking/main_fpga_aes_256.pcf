@@ -1,0 +1,42 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed Apr 17 23:24:42 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "J1" LEVEL 1;
+COMP "lbus_re" LOCATE = SITE "AB16" LEVEL 1;
+COMP "lbus_we" LOCATE = SITE "AB14" LEVEL 1;
+COMP "trigger" LOCATE = SITE "A4" LEVEL 1;
+COMP "lbus_rstn" LOCATE = SITE "AB11" LEVEL 1;
+COMP "led<0>" LOCATE = SITE "V2" LEVEL 1;
+COMP "led<1>" LOCATE = SITE "V1" LEVEL 1;
+COMP "led<2>" LOCATE = SITE "U1" LEVEL 1;
+COMP "led<3>" LOCATE = SITE "T2" LEVEL 1;
+COMP "led<4>" LOCATE = SITE "T1" LEVEL 1;
+COMP "led<5>" LOCATE = SITE "R1" LEVEL 1;
+COMP "led<6>" LOCATE = SITE "P2" LEVEL 1;
+COMP "led<7>" LOCATE = SITE "P1" LEVEL 1;
+COMP "led<8>" LOCATE = SITE "N1" LEVEL 1;
+COMP "led<9>" LOCATE = SITE "M2" LEVEL 1;
+COMP "lbus_clk" LOCATE = SITE "AA12" LEVEL 1;
+COMP "lbus_emp" LOCATE = SITE "AA16" LEVEL 1;
+COMP "lbus_ful" LOCATE = SITE "AA14" LEVEL 1;
+COMP "lbus_rdy" LOCATE = SITE "AA6" LEVEL 1;
+COMP "lbus_rd<0>" LOCATE = SITE "Y21" LEVEL 1;
+COMP "lbus_rd<1>" LOCATE = SITE "AA22" LEVEL 1;
+COMP "lbus_rd<2>" LOCATE = SITE "AA21" LEVEL 1;
+COMP "lbus_rd<3>" LOCATE = SITE "AB21" LEVEL 1;
+COMP "lbus_rd<4>" LOCATE = SITE "AA20" LEVEL 1;
+COMP "lbus_rd<5>" LOCATE = SITE "AB20" LEVEL 1;
+COMP "lbus_rd<6>" LOCATE = SITE "AB19" LEVEL 1;
+COMP "lbus_rd<7>" LOCATE = SITE "AA18" LEVEL 1;
+COMP "lbus_wd<0>" LOCATE = SITE "AB4" LEVEL 1;
+COMP "lbus_wd<1>" LOCATE = SITE "AA4" LEVEL 1;
+COMP "lbus_wd<2>" LOCATE = SITE "AB3" LEVEL 1;
+COMP "lbus_wd<3>" LOCATE = SITE "AB2" LEVEL 1;
+COMP "lbus_wd<4>" LOCATE = SITE "AA2" LEVEL 1;
+COMP "lbus_wd<5>" LOCATE = SITE "Y2" LEVEL 1;
+COMP "lbus_wd<6>" LOCATE = SITE "Y1" LEVEL 1;
+COMP "lbus_wd<7>" LOCATE = SITE "W1" LEVEL 1;
+SCHEMATIC END;
+

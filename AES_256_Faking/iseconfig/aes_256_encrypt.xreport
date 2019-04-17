@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2019-04-02T15:16:45</DateModified>
+  <DateModified>2019-04-17T11:58:07</DateModified>
   <ModuleName>aes_256_encrypt</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/Anizetho/Documents/ISE/AES_256/iseconfig/aes_256_encrypt.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Anizetho/Documents/ISE/AES_256\</ImplementationReportsDirectory>
-  <DateInitialized>2019-02-19T13:22:01</DateInitialized>
+  <SavedFilePath>C:/Users/Anizetho/Documents/ISE/AES_256_Faking/iseconfig/aes_256_encrypt.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Anizetho/Documents/ISE/AES_256_Faking\</ImplementationReportsDirectory>
+  <DateInitialized>2019-04-03T13:06:41</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>

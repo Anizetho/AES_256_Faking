@@ -27,14 +27,14 @@ signal tmp : std_logic_vector(255 downto 0);
 
 begin
 
-	w0 <= key_256(255 downto 224);
-	w1 <= key_256(223 downto 192);
-	w2 <= key_256(191 downto 160);
-	w3 <= key_256(159 downto 128);
-	w4 <= key_256(127 downto 96);
-	w5 <= key_256(95 downto 64);
-	w6 <= key_256(63 downto 32);
-	w7 <= key_256(31 downto 0);
+	w0 <= key_256(255 downto 224) ;
+	w1 <= key_256(223 downto 192) ;
+	w2 <= key_256(191 downto 160) ;
+	w3 <= key_256(159 downto 128) ;
+	w4 <= key_256(127 downto 96) ;
+	w5 <= key_256(95 downto 64) ;
+	w6 <= key_256(63 downto 32) ;
+	w7 <= key_256(31 downto 0) ;
 
 	-- 16 PREMIERS BYTES
 	-- 1ère nouvelle colonne : les 4 premiers nouveaux bytes (ligne par ligne)
