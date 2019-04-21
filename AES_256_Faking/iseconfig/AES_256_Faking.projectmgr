@@ -8,16 +8,17 @@
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/aes_256_encrypt - Behavioral C:|Users|Anizetho|Documents|ISE|AES_256_Faking|aes_256_encrypt.vhd/mix_column_instance - mix_column - behavioral</ClosedNode>
+         <ClosedNode>/main_fpga_aes_256 - behavioral C:|Users|Anizetho|Documents|Github|AES_256_Faking|AES_256_Faking|main_fpga_aes_256.vhd/aes_256_encrypt_inst - aes_256_encrypt - Behavioral/mix_column_instance - mix_column - behavioral</ClosedNode>
          <ClosedNode>/main_fpga_aes_256 - behavioral C:|Users|Anizetho|Documents|ISE|AES_256_Faking|main_fpga_aes_256.vhd/aes_256_encrypt_inst - aes_256_encrypt - Behavioral</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>main_fpga_aes_256 - behavioral (C:/Users/Anizetho/Documents/ISE/AES_256_Faking/main_fpga_aes_256.vhd)</SelectedItem>
+         <SelectedItem>add_round_key_instance - add_round_key - behavioral (C:/Users/Anizetho/Documents/Github/AES_256_Faking/AES_256_Faking/add_round_key.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >1</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000020c000000020000000000000000000000000200000064ffffffff0000008100000003000000020000020c0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000274000000020000000000000000000000000200000064ffffffff000000810000000300000002000002740000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>main_fpga_aes_256 - behavioral (C:/Users/Anizetho/Documents/ISE/AES_256_Faking/main_fpga_aes_256.vhd)</CurrentItem>
+      <CurrentItem>add_round_key_instance - add_round_key - behavioral (C:/Users/Anizetho/Documents/Github/AES_256_Faking/AES_256_Faking/add_round_key.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -25,13 +26,13 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -71,7 +72,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000e7000000010000000100000000000000000000000064ffffffff000000810000000000000001000000e70000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000e2000000010000000100000000000000000000000064ffffffff000000810000000000000001000000e20000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>

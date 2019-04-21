@@ -32,23 +32,28 @@ architecture Behavioral of aes_256_encrypt is
 
 component top_key_scheduler_256
     port ( 	
-			clk 			: in  std_logic;
-			rst 			: in  std_logic;
-			start 		: in  std_logic;
-			key_256 		: in  std_logic_vector(255 downto 0);
-			key_Mask    : in  std_logic_vector(255 downto 0);
-			keyExpanded : out keyExpand;
-			done 			: out std_logic);
+			clk 					: in  std_logic;
+			rst 					: in  std_logic;
+			start 				: in  std_logic;
+			key_256 				: in  std_logic_vector(255 downto 0);
+			key_Mask    		: in  std_logic_vector(255 downto 0);
+			keyExpandedReal 	: out keyExpandedReal;
+			keyExpandedFake 	: out keyExpandedFake;
+			done 					: out std_logic);
 end component top_key_scheduler_256;
 
 component add_round_key
 	port(
-		clock 		: in  std_logic;
-		reset 		: in  std_logic;
-		en 			: in  std_logic;
-		state 		: in  std_logic_vector(127 downto 0);
-		round_key 	: in  std_logic_vector(127 downto 0);		
-		result 		: out std_logic_vector(127 downto 0));
+		clock 				: in  std_logic;
+		reset 				: in  std_logic;
+		en 					: in  std_logic;
+		en_fake_key			: in  STD_LOGIC;
+		en_real_key			: in  STD_LOGIC;
+		state 				: in  std_logic_vector(127 downto 0);
+		round_key 			: in  std_logic_vector(127 downto 0);		
+		round_key_real 	: in  std_logic_vector(127 downto 0);
+		maskExpended 		: out STD_LOGIC_VECTOR(127 downto 0);		
+		result 				: out std_logic_vector(127 downto 0));
 end component;
 
 component sub_byte
@@ -91,15 +96,19 @@ signal count_round 	      : std_logic_vector(3 downto 0);		-- Permet de choisir 
 signal count_op 	        	: std_logic_vector(1 downto 0);		-- Compte le nombre d'opérations ?
 signal sel_ark_in 	      : std_logic_vector(1 downto 0);		-- Permet de séléctionner pltxt/sortie Mix/sortie shift comme entrée de addroundkey.
 
-signal round_key 	        	: std_logic_vector(127 downto 0);	-- Clé pour un round en particulier
+signal round_key 	        	: std_logic_vector(127 downto 0);	-- Fausse Clé pour un round en particulier
+signal round_key_real     	: std_logic_vector(127 downto 0);	-- Vraie Clé pour un round en particulier
+signal round_key_mask     	: std_logic_vector(127 downto 0);	-- Masque pour un round en particulier
 
 signal en_block 		    	: std_logic_vector(3 downto 0);		-- Pour activer/désactiver les sous-modules (les 4 opérations).
+signal en_real_key 		   : STD_LOGIC;								-- Pour activer la fausse clé pour l'addroundkey.
+signal en_fake_key 		   : STD_LOGIC;								-- Pour activer la vraie clé pour l'addroundkey.
+
 signal done_schedule 	   : std_logic;								-- Permet de dire si l'exécution de l'opération keyschedule est terminée.
 signal alm_done_schedule   : std_logic;								-- Sert à rien ?
-signal enable_key_schedule : std_logic;								-- Sert à rien ?
-signal keyExpanded	  		: keyExpand;
+signal keyExpandedReal	  	: keyExpandedReal;
+signal keyExpandedFake	  	: keyExpandedFake;
 
---constant key_Mask : std_logic_vector(255 downto 0) := X"020406080A0C0E10121416181A1C1E20222426282A2C2E30323436383A3C3E40";
 
 begin
 
@@ -107,7 +116,11 @@ begin
 			clock => clk,
 			reset => rst,
 			en => en_block(3),	-- 3 => "1000"
+			en_fake_key => en_fake_key,
+			en_real_key => en_real_key,
 			round_key => round_key,
+			round_key_real => round_key_real,
+			maskExpended => round_key_mask,
 			state => ark_in,			
 			result => ark_sbox);
 			
@@ -117,7 +130,7 @@ begin
 			en => en_block(2),	-- 2 => "0100"
 			state =>  ark_sbox,        
 			result => sbox_shift);
-		
+			
 	shift_rows_instance : shift_rows port map (
 			clock => clk,
 			reset => rst,
@@ -138,13 +151,19 @@ begin
 		start => start,
 		key_256 =>  key,
 		key_Mask => key_Mask,
-		keyExpanded => keyExpanded,
+		keyExpandedReal => keyExpandedReal,
+		keyExpandedFake => keyExpandedFake,
 		done => done_schedule);
 
 	
 	with 	count_round(0) select
-		round_key <= 	keyExpanded(conv_integer(count_round(3 downto 1)))(255 downto 128) when '0',
-							keyExpanded(conv_integer(count_round(3 downto 1)))(127 downto 0) when '1',
+		round_key <= 	keyExpandedFake(conv_integer(count_round(3 downto 1)))(255 downto 128) when '0',
+							keyExpandedFake(conv_integer(count_round(3 downto 1)))(127 downto 0) when '1',
+							(others => '0') when others;
+							
+	with 	count_round(0) select
+		round_key_real <= 	keyExpandedReal(conv_integer(count_round(3 downto 1)))(255 downto 128) when '0',
+							keyExpandedReal(conv_integer(count_round(3 downto 1)))(127 downto 0) when '1',
 							(others => '0') when others;
 	
 	with 	sel_ark_in select
@@ -164,6 +183,8 @@ begin
 				done 			<= '0';
 				en_block 	<= (others => '0');
 				sel_ark_in  <= (others => '0');
+				en_real_key <= '0';
+				en_fake_key <= '0';
 			else
 				case cstate is
 					-- Idle : rien ne se passe ! Quand start passe à 1 : Idle passe à store_rk
@@ -181,6 +202,8 @@ begin
 					when 		STORE_RK => cstate <= STORE_RK;
 												if done_schedule = '1' then
 													cstate <= MROUNDS;
+													en_real_key <= '0';
+													en_fake_key <= '1';
 													en_block <= "1000";
 												end if;		
 					
@@ -219,6 +242,9 @@ begin
 														cstate <= IDLE;
 														done <= '1';
 														sel_ark_in <= (others => '0');
+													else
+														en_real_key <= '1';
+														en_fake_key <= '0';
 													end if;
 					when others =>				cstate <= IDLE;
 				end case;

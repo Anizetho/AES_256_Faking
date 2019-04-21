@@ -4,11 +4,13 @@ use ieee.std_logic_arith.all;
 use ieee.std_logic_unsigned.all;
 
 
-package aes_256_package is
+package aes_256_package is 
 
 	type ARRAY_256 is ARRAY (0 to 255) of STD_LOGIC_VECTOR(7 downto 0);
 	type ARRAY_7 is ARRAY (0 to 6) of STD_LOGIC_VECTOR(7 downto 0);
-	type keyExpand is ARRAY (0 to 7) of STD_LOGIC_VECTOR(255 downto 0);
+	type keyExpandedReal is ARRAY (0 to 7) of STD_LOGIC_VECTOR(255 downto 0);
+	type keyExpandedFake is ARRAY (0 to 7) of STD_LOGIC_VECTOR(255 downto 0);
+	type maskExpended is ARRAY (0 to 7) of STD_LOGIC_VECTOR(255 downto 0);
 	type GFVector is ARRAY (0 to 16) of STD_LOGIC_VECTOR(0 to 127);
 
 	constant sbox : ARRAY_256 :=	(	X"63",X"7c",X"77",X"7b",X"f2",X"6b",X"6f",X"c5",X"30",X"01",X"67",X"2b",X"fe",X"d7",X"ab",X"76",
