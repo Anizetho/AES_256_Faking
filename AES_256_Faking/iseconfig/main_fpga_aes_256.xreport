@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2019-04-21T21:16:33</DateModified>
+  <DateModified>2019-04-22T20:18:13</DateModified>
   <ModuleName>main_fpga_aes_256</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/Anizetho/Documents/Github/AES_256_Faking/AES_256_Faking/iseconfig/main_fpga_aes_256.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Anizetho/Documents/Github/AES_256_Faking/AES_256_Faking\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/Anizetho/Documents/ISE/AES_256_Faking/iseconfig/main_fpga_aes_256.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Anizetho/Documents/ISE/AES_256_Faking\</ImplementationReportsDirectory>
   <DateInitialized>2019-04-17T23:53:54</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

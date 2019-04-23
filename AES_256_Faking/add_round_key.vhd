@@ -40,7 +40,7 @@ begin
 				-- result 			<= state XOR round_key;
 				-- maskExpended 	<= round_key XOR round_key_real;
 			else
-				result <= (others => '0');
+				--result <= (others => '0');
 			end if;
 		end if;
 	end if;

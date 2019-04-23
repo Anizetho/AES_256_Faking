@@ -10,7 +10,8 @@ entity sub_byte is
 			reset 	: in  STD_LOGIC;
 			en 		: in  STD_LOGIC;
 			state 	: in  STD_LOGIC_VECTOR (127 downto 0);
-			result 	: out  STD_LOGIC_VECTOR (127 downto 0));
+			result 	: out  STD_LOGIC_VECTOR (127 downto 0)
+			);
 end sub_byte;
 
 architecture behavioral of sub_byte IS

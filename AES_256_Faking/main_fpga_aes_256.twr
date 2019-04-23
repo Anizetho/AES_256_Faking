@@ -37,7 +37,7 @@ Setup/Hold to clock clk
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-lbus_rstn   |   16.772(R)|      SLOW  |   -3.082(R)|      FAST  |clk_BUFGP         |   0.000|
+lbus_rstn   |   12.289(R)|      SLOW  |   -0.597(R)|      SLOW  |clk_BUFGP         |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Setup/Hold to clock lbus_clk
@@ -45,17 +45,17 @@ Setup/Hold to clock lbus_clk
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-lbus_re     |    6.214(R)|      SLOW  |   -2.583(R)|      FAST  |lbus_clk_BUFGP    |   0.000|
-lbus_rstn   |   10.641(R)|      SLOW  |   -2.056(R)|      FAST  |lbus_clk_BUFGP    |   0.000|
-lbus_wd<0>  |    4.947(R)|      SLOW  |   -2.342(R)|      FAST  |lbus_clk_BUFGP    |   0.000|
-lbus_wd<1>  |    5.571(R)|      SLOW  |   -2.088(R)|      FAST  |lbus_clk_BUFGP    |   0.000|
-lbus_wd<2>  |    5.868(R)|      SLOW  |   -2.646(R)|      FAST  |lbus_clk_BUFGP    |   0.000|
-lbus_wd<3>  |    6.294(R)|      SLOW  |   -3.087(R)|      FAST  |lbus_clk_BUFGP    |   0.000|
-lbus_wd<4>  |    6.826(R)|      SLOW  |   -3.062(R)|      FAST  |lbus_clk_BUFGP    |   0.000|
-lbus_wd<5>  |    6.379(R)|      SLOW  |   -2.947(R)|      FAST  |lbus_clk_BUFGP    |   0.000|
-lbus_wd<6>  |    6.878(R)|      SLOW  |   -3.124(R)|      FAST  |lbus_clk_BUFGP    |   0.000|
-lbus_wd<7>  |    5.534(R)|      SLOW  |   -2.527(R)|      FAST  |lbus_clk_BUFGP    |   0.000|
-lbus_we     |    4.952(R)|      SLOW  |   -3.243(R)|      FAST  |lbus_clk_BUFGP    |   0.000|
+lbus_re     |    3.365(R)|      SLOW  |   -0.543(R)|      SLOW  |lbus_clk_BUFGP    |   0.000|
+lbus_rstn   |    8.724(R)|      SLOW  |   -0.280(R)|      SLOW  |lbus_clk_BUFGP    |   0.000|
+lbus_wd<0>  |    6.496(R)|      SLOW  |   -0.836(R)|      SLOW  |lbus_clk_BUFGP    |   0.000|
+lbus_wd<1>  |    5.959(R)|      SLOW  |   -0.727(R)|      SLOW  |lbus_clk_BUFGP    |   0.000|
+lbus_wd<2>  |    6.255(R)|      SLOW  |   -1.000(R)|      SLOW  |lbus_clk_BUFGP    |   0.000|
+lbus_wd<3>  |    7.436(R)|      SLOW  |   -1.878(R)|      FAST  |lbus_clk_BUFGP    |   0.000|
+lbus_wd<4>  |    7.986(R)|      SLOW  |   -2.104(R)|      FAST  |lbus_clk_BUFGP    |   0.000|
+lbus_wd<5>  |    7.086(R)|      SLOW  |   -1.649(R)|      FAST  |lbus_clk_BUFGP    |   0.000|
+lbus_wd<6>  |    7.778(R)|      SLOW  |   -1.953(R)|      FAST  |lbus_clk_BUFGP    |   0.000|
+lbus_wd<7>  |    6.205(R)|      SLOW  |   -1.370(R)|      SLOW  |lbus_clk_BUFGP    |   0.000|
+lbus_we     |    3.710(R)|      SLOW  |   -2.549(R)|      FAST  |lbus_clk_BUFGP    |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Clock clk to Pad
@@ -68,10 +68,10 @@ led<1>      |         6.467(R)|      SLOW  |         3.035(R)|      FAST  |clk_B
 led<2>      |         6.463(R)|      SLOW  |         3.031(R)|      FAST  |clk_BUFGP         |   0.000|
 led<3>      |         6.470(R)|      SLOW  |         3.038(R)|      FAST  |clk_BUFGP         |   0.000|
 led<4>      |         6.470(R)|      SLOW  |         3.038(R)|      FAST  |clk_BUFGP         |   0.000|
-led<7>      |         7.388(R)|      SLOW  |         3.944(R)|      FAST  |clk_BUFGP         |   0.000|
-led<8>      |         7.425(R)|      SLOW  |         3.963(R)|      FAST  |clk_BUFGP         |   0.000|
-led<9>      |         7.270(R)|      SLOW  |         3.918(R)|      FAST  |clk_BUFGP         |   0.000|
-trigger     |        10.118(R)|      SLOW  |         5.476(R)|      FAST  |clk_BUFGP         |   0.000|
+led<7>      |         8.450(R)|      SLOW  |         4.553(R)|      FAST  |clk_BUFGP         |   0.000|
+led<8>      |         8.510(R)|      SLOW  |         4.588(R)|      FAST  |clk_BUFGP         |   0.000|
+led<9>      |         8.927(R)|      SLOW  |         4.849(R)|      FAST  |clk_BUFGP         |   0.000|
+trigger     |        11.931(R)|      SLOW  |         6.668(R)|      FAST  |clk_BUFGP         |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock lbus_clk to Pad
@@ -79,16 +79,16 @@ Clock lbus_clk to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-lbus_emp    |        11.915(R)|      SLOW  |         6.554(R)|      FAST  |lbus_clk_BUFGP    |   0.000|
-lbus_ful    |        10.925(R)|      SLOW  |         6.024(R)|      FAST  |lbus_clk_BUFGP    |   0.000|
-lbus_rd<0>  |         9.901(R)|      SLOW  |         5.471(R)|      FAST  |lbus_clk_BUFGP    |   0.000|
-lbus_rd<1>  |        10.344(R)|      SLOW  |         5.767(R)|      FAST  |lbus_clk_BUFGP    |   0.000|
-lbus_rd<2>  |        10.129(R)|      SLOW  |         5.592(R)|      FAST  |lbus_clk_BUFGP    |   0.000|
-lbus_rd<3>  |        10.138(R)|      SLOW  |         5.642(R)|      FAST  |lbus_clk_BUFGP    |   0.000|
-lbus_rd<4>  |         9.872(R)|      SLOW  |         5.458(R)|      FAST  |lbus_clk_BUFGP    |   0.000|
-lbus_rd<5>  |        10.586(R)|      SLOW  |         5.914(R)|      FAST  |lbus_clk_BUFGP    |   0.000|
-lbus_rd<6>  |        10.569(R)|      SLOW  |         5.874(R)|      FAST  |lbus_clk_BUFGP    |   0.000|
-lbus_rd<7>  |        12.724(R)|      SLOW  |         7.213(R)|      FAST  |lbus_clk_BUFGP    |   0.000|
+lbus_emp    |         9.613(R)|      SLOW  |         5.257(R)|      FAST  |lbus_clk_BUFGP    |   0.000|
+lbus_ful    |         8.686(R)|      SLOW  |         4.729(R)|      FAST  |lbus_clk_BUFGP    |   0.000|
+lbus_rd<0>  |         8.344(R)|      SLOW  |         4.367(R)|      FAST  |lbus_clk_BUFGP    |   0.000|
+lbus_rd<1>  |         7.959(R)|      SLOW  |         4.213(R)|      FAST  |lbus_clk_BUFGP    |   0.000|
+lbus_rd<2>  |         7.686(R)|      SLOW  |         3.951(R)|      FAST  |lbus_clk_BUFGP    |   0.000|
+lbus_rd<3>  |         7.752(R)|      SLOW  |         3.999(R)|      FAST  |lbus_clk_BUFGP    |   0.000|
+lbus_rd<4>  |         7.714(R)|      SLOW  |         3.966(R)|      FAST  |lbus_clk_BUFGP    |   0.000|
+lbus_rd<5>  |         7.327(R)|      SLOW  |         3.770(R)|      FAST  |lbus_clk_BUFGP    |   0.000|
+lbus_rd<6>  |         7.645(R)|      SLOW  |         4.001(R)|      FAST  |lbus_clk_BUFGP    |   0.000|
+lbus_rd<7>  |         8.620(R)|      SLOW  |         4.669(R)|      FAST  |lbus_clk_BUFGP    |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
@@ -96,8 +96,8 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    8.367|         |         |         |
-lbus_clk       |   10.359|         |         |         |
+clk            |    9.450|         |         |         |
+lbus_clk       |   11.348|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock lbus_clk
@@ -105,19 +105,19 @@ Clock to Setup on destination clock lbus_clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    3.705|         |         |         |
-lbus_clk       |    3.181|         |         |         |
+clk            |    2.772|         |         |         |
+lbus_clk       |    4.525|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Wed Apr 17 23:25:43 2019 
+Analysis completed Mon Apr 22 17:14:42 2019 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 4755 MB
+Peak Memory Usage: 4796 MB
 
 
 

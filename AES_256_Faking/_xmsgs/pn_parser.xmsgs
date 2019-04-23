@@ -8,37 +8,7 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Anizetho/Documents/Github/AES_256_Faking/AES_256_Faking/add_round_key.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Anizetho/Documents/Github/AES_256_Faking/AES_256_Faking/aes_256_encrypt.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Anizetho/Documents/Github/AES_256_Faking/AES_256_Faking/aes_256_package.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Anizetho/Documents/Github/AES_256_Faking/AES_256_Faking/controller_fpga_if.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Anizetho/Documents/Github/AES_256_Faking/AES_256_Faking/key_scheduler_256.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Anizetho/Documents/Github/AES_256_Faking/AES_256_Faking/main_fpga_aes_256.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Anizetho/Documents/Github/AES_256_Faking/AES_256_Faking/mix_column.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Anizetho/Documents/Github/AES_256_Faking/AES_256_Faking/mix_column_aux.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Anizetho/Documents/Github/AES_256_Faking/AES_256_Faking/shift_rows.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Anizetho/Documents/Github/AES_256_Faking/AES_256_Faking/sub_byte.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Anizetho/Documents/Github/AES_256_Faking/AES_256_Faking/top_key_scheduler_256.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Anizetho/Documents/ISE/AES_256_Faking/aes_256_encrypt.vhd&quot; into library work</arg>
 </msg>
 
 </messages>

@@ -71,6 +71,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="main_fpga_aes_256.ut" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:fileType="FILE_XPI" xil_pn:name="main_fpga_aes_256.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="main_fpga_aes_256.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="main_fpga_aes_256_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="main_fpga_aes_256_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="main_fpga_aes_256_map.map" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="main_fpga_aes_256_map.mrp" xil_pn:subbranch="Map"/>
@@ -81,9 +82,13 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="main_fpga_aes_256_pad.csv" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="main_fpga_aes_256_pad.txt" xil_pn:subbranch="Par"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="main_fpga_aes_256_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="main_fpga_aes_256_summary.html"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="main_fpga_aes_256_summary.xml"/>
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="main_fpga_aes_256_usage.xml"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="main_fpga_aes_256_xst.xrpt"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="sub_byte_trans.fdo"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="sub_byte_trans_testbench.fdo"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="sub_bytes_testbench.fdo"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_LOG" xil_pn:name="vsim.wlf"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
@@ -98,79 +103,73 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1555500023" xil_pn:in_ck="8540323894888635739" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1555500023">
+    <transform xil_pn:end_ts="1556016442" xil_pn:in_ck="6351677954368116088" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1556016442">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputAdded"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="add_round_key.vhd"/>
       <outfile xil_pn:name="add_round_key_testbench.vhd"/>
       <outfile xil_pn:name="aes_256_encrypt.vhd"/>
       <outfile xil_pn:name="aes_256_encrypt_testbench.vhd"/>
       <outfile xil_pn:name="aes_256_package.vhd"/>
+      <outfile xil_pn:name="controller_fpga_if.vhd"/>
       <outfile xil_pn:name="key_schedule_instance_testbench.vhd"/>
       <outfile xil_pn:name="key_schedule_testbench.vhd"/>
       <outfile xil_pn:name="key_scheduler_256.vhd"/>
+      <outfile xil_pn:name="main_fpga_aes_256.vhd"/>
       <outfile xil_pn:name="mic_column_testbench.vhd"/>
       <outfile xil_pn:name="mix_column.vhd"/>
       <outfile xil_pn:name="mix_column_aux.vhd"/>
+      <outfile xil_pn:name="remasking.vhd"/>
       <outfile xil_pn:name="shift_rows.vhd"/>
       <outfile xil_pn:name="shift_rows_testbench.vhd"/>
       <outfile xil_pn:name="sub_byte.vhd"/>
+      <outfile xil_pn:name="sub_byte_trans.vhd"/>
+      <outfile xil_pn:name="sub_byte_trans_testbench.vhd"/>
       <outfile xil_pn:name="sub_bytes_testbench.vhd"/>
       <outfile xil_pn:name="top_key_scheduler_256.vhd"/>
       <outfile xil_pn:name="top_key_scheduler_256_testbench.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1555501708" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-6534921314281867282" xil_pn:start_ts="1555501708">
+    <transform xil_pn:end_ts="1556016442" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-6534921314281867282" xil_pn:start_ts="1556016442">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1555501708" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-8051203765980288916" xil_pn:start_ts="1555501708">
+    <transform xil_pn:end_ts="1556016442" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-8051203765980288916" xil_pn:start_ts="1556016442">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1555435822" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-9057012890344382635" xil_pn:start_ts="1555435822">
+    <transform xil_pn:end_ts="1555663782" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-499486094509930574" xil_pn:start_ts="1555663782">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
-    <transform xil_pn:end_ts="1555500023" xil_pn:in_ck="8540323894888635739" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1555500023">
+    <transform xil_pn:end_ts="1556016442" xil_pn:in_ck="6351677954368116088" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1556016442">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="add_round_key.vhd"/>
       <outfile xil_pn:name="add_round_key_testbench.vhd"/>
       <outfile xil_pn:name="aes_256_encrypt.vhd"/>
       <outfile xil_pn:name="aes_256_encrypt_testbench.vhd"/>
       <outfile xil_pn:name="aes_256_package.vhd"/>
+      <outfile xil_pn:name="controller_fpga_if.vhd"/>
       <outfile xil_pn:name="key_schedule_instance_testbench.vhd"/>
       <outfile xil_pn:name="key_schedule_testbench.vhd"/>
       <outfile xil_pn:name="key_scheduler_256.vhd"/>
+      <outfile xil_pn:name="main_fpga_aes_256.vhd"/>
       <outfile xil_pn:name="mic_column_testbench.vhd"/>
       <outfile xil_pn:name="mix_column.vhd"/>
       <outfile xil_pn:name="mix_column_aux.vhd"/>
+      <outfile xil_pn:name="remasking.vhd"/>
       <outfile xil_pn:name="shift_rows.vhd"/>
       <outfile xil_pn:name="shift_rows_testbench.vhd"/>
       <outfile xil_pn:name="sub_byte.vhd"/>
+      <outfile xil_pn:name="sub_byte_trans.vhd"/>
+      <outfile xil_pn:name="sub_byte_trans_testbench.vhd"/>
       <outfile xil_pn:name="sub_bytes_testbench.vhd"/>
       <outfile xil_pn:name="top_key_scheduler_256.vhd"/>
       <outfile xil_pn:name="top_key_scheduler_256_testbench.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1555501710" xil_pn:in_ck="8540323894888635739" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="-3286620494048968334" xil_pn:start_ts="1555501708">
+    <transform xil_pn:end_ts="1556016444" xil_pn:in_ck="6351677954368116088" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="-3286620494048968334" xil_pn:start_ts="1556016442">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="aes_256_encrypt_testbench.fdo"/>
       <outfile xil_pn:name="vsim.wlf"/>
       <outfile xil_pn:name="work"/>
@@ -203,93 +202,68 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1555536172" xil_pn:in_ck="1163087608389055526" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="7859608284039248715" xil_pn:start_ts="1555536138">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="WarningsGenerated"/>
+    <transform xil_pn:end_ts="1555955855" xil_pn:in_ck="252192392579592299" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="7859608284039248715" xil_pn:start_ts="1555955839">
+      <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
-      <outfile xil_pn:name="aes_256_encrypt.ngr"/>
-      <outfile xil_pn:name="main_fpga_aes_256.lso"/>
-      <outfile xil_pn:name="main_fpga_aes_256.ngc"/>
-      <outfile xil_pn:name="main_fpga_aes_256.ngr"/>
-      <outfile xil_pn:name="main_fpga_aes_256.prj"/>
-      <outfile xil_pn:name="main_fpga_aes_256.stx"/>
-      <outfile xil_pn:name="main_fpga_aes_256.syr"/>
-      <outfile xil_pn:name="main_fpga_aes_256.xst"/>
-      <outfile xil_pn:name="main_fpga_aes_256_xst.xrpt"/>
-      <outfile xil_pn:name="webtalk_pn.xml"/>
-      <outfile xil_pn:name="xst"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1555502202" xil_pn:in_ck="-4006089083138498878" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-6499829850029956914" xil_pn:start_ts="1555502202">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1555536179" xil_pn:in_ck="-2387841223354333475" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="976229343036729821" xil_pn:start_ts="1555536172">
+    <transform xil_pn:end_ts="1555945596" xil_pn:in_ck="-2387841223354333475" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="976229343036729821" xil_pn:start_ts="1555945588">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <outfile xil_pn:name="_ngo"/>
-      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
-      <outfile xil_pn:name="main_fpga_aes_256.bld"/>
-      <outfile xil_pn:name="main_fpga_aes_256.ngd"/>
-      <outfile xil_pn:name="main_fpga_aes_256_ngdbuild.xrpt"/>
-    </transform>
-    <transform xil_pn:end_ts="1555536284" xil_pn:in_ck="-4774872144507827521" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="-4514313162002381877" xil_pn:start_ts="1555536179">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
-      <outfile xil_pn:name="main_fpga_aes_256.pcf"/>
-      <outfile xil_pn:name="main_fpga_aes_256_map.map"/>
-      <outfile xil_pn:name="main_fpga_aes_256_map.mrp"/>
-      <outfile xil_pn:name="main_fpga_aes_256_map.ncd"/>
-      <outfile xil_pn:name="main_fpga_aes_256_map.ngm"/>
-      <outfile xil_pn:name="main_fpga_aes_256_map.xrpt"/>
-      <outfile xil_pn:name="main_fpga_aes_256_summary.xml"/>
-      <outfile xil_pn:name="main_fpga_aes_256_usage.xml"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
-    <transform xil_pn:end_ts="1555536344" xil_pn:in_ck="-1396392974255397864" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="832869163894192598" xil_pn:start_ts="1555536284">
+    <transform xil_pn:end_ts="1555945922" xil_pn:in_ck="-4774872144507827521" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="-4514313162002381877" xil_pn:start_ts="1555945596">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
-      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
-      <outfile xil_pn:name="main_fpga_aes_256.ncd"/>
-      <outfile xil_pn:name="main_fpga_aes_256.pad"/>
-      <outfile xil_pn:name="main_fpga_aes_256.par"/>
-      <outfile xil_pn:name="main_fpga_aes_256.ptwx"/>
-      <outfile xil_pn:name="main_fpga_aes_256.unroutes"/>
-      <outfile xil_pn:name="main_fpga_aes_256.xpi"/>
-      <outfile xil_pn:name="main_fpga_aes_256_pad.csv"/>
-      <outfile xil_pn:name="main_fpga_aes_256_pad.txt"/>
-      <outfile xil_pn:name="main_fpga_aes_256_par.xrpt"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
+    </transform>
+    <transform xil_pn:end_ts="1555946083" xil_pn:in_ck="-1396392974255397864" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="832869163894192598" xil_pn:start_ts="1555945922">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1555536379" xil_pn:in_ck="-4006089083138506503" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5017394210571468131" xil_pn:start_ts="1555536346">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
-      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
-      <outfile xil_pn:name="main_fpga_aes_256.bgn"/>
-      <outfile xil_pn:name="main_fpga_aes_256.bit"/>
-      <outfile xil_pn:name="main_fpga_aes_256.drc"/>
-      <outfile xil_pn:name="main_fpga_aes_256.ut"/>
-      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
-      <outfile xil_pn:name="webtalk.log"/>
-      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
-    <transform xil_pn:end_ts="1555536344" xil_pn:in_ck="7693561573195887963" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1555536334">
+    <transform xil_pn:end_ts="1555946083" xil_pn:in_ck="7693561573195887963" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1555946072">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
-      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
-      <outfile xil_pn:name="main_fpga_aes_256.twr"/>
-      <outfile xil_pn:name="main_fpga_aes_256.twx"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
   </transforms>
 

@@ -25,11 +25,11 @@
 -- to guarantee that the testbench will bind correctly to the post-implementation 
 -- simulation model.
 --------------------------------------------------------------------------------
-LIBRARY ieee;
-USE ieee.std_logic_1164.ALL;
+library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
+--use IEEE.numeric_std.ALL;
 use work.aes_256_package.all;
  
 -- Uncomment the following library declaration if using
@@ -45,12 +45,13 @@ ARCHITECTURE behavior OF sub_byte_trans_testbench IS
  
     COMPONENT sub_byte_trans
     PORT(
-         clock 		: IN  std_logic;
-         reset 		: IN  std_logic;
-         en 			: IN  std_logic;
-         state 		: IN  std_logic;
-         round_mask 	: IN  std_logic;
-         result 		: OUT  std_logic
+         clock 				: IN  std_logic;
+         reset 				: IN  std_logic;
+         en 					: IN  std_logic;
+         state 				: IN  STD_LOGIC_VECTOR (127 downto 0);
+         round_mask 			: IN  STD_LOGIC_VECTOR (127 downto 0);
+         result 				: OUT STD_LOGIC_VECTOR (127 downto 0);
+			doneSubByteTrans 	: OUT std_logic
         );
     END COMPONENT;
     
@@ -59,12 +60,13 @@ ARCHITECTURE behavior OF sub_byte_trans_testbench IS
    signal clock 		: std_logic := '0';
    signal reset 		: std_logic := '0';
    signal en 			: std_logic := '0';
-   signal state 		: std_logic := '0';
-   signal round_mask : std_logic := '0';
+   signal state 		: std_logic_vector(127 downto 0) := (others => '0');
+   signal round_mask : std_logic_vector(127 downto 0) := (others => '0');
 
  	--Outputs
-   signal result 		: std_logic;
-
+   signal result 					: std_logic_vector(127 downto 0) := (others => '0');
+   signal doneSubByteTrans 	: std_logic := '0';
+	
    -- Clock period definitions
    constant clock_period : time := 10 ns;
  
@@ -77,7 +79,8 @@ BEGIN
           en => en,
           state => state,
           round_mask => round_mask,
-          result => result
+          result => result, 
+			 doneSubByteTrans => doneSubByteTrans
         );
 
    -- Clock process definitions
@@ -95,16 +98,25 @@ BEGIN
    begin		
 		reset <= '1';
 		en <= '0';
-		wait for 50 ns;
+		
+		wait for clock_period*3;
+		
 		reset <= '0';
 		en <= '1';
-		state <= X"00102030405060708090a0b0c0d0e0f0"; 
+		--state <= X"00102030405060708090a0b0c0d0e0f0";
+		state <= X"10301070103010F010301070103011F1";
 		round_mask <= X"102030405060708090A0B0C0D0E0F101";
+		
+      wait for clock_period*5;
+		
+		en <= '0';
+		
+      wait for clock_period*1;
 
-      wait for clock_period*10;
-
-      -- insert stimulus here 
-
+		en <= '1';
+		state <= X"10301070103010F010301070103011F1";
+		round_mask <= X"102030405060708090A0B0C0D0E0F101";
+      wait for clock_period*5;
       wait;
    end process;
 

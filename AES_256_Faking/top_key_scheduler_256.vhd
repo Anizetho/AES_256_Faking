@@ -33,7 +33,7 @@ signal enable_Key_Real	: std_logic;
 signal enable_Key_Fake	: std_logic;
 signal done_enable		: std_logic;
 
-type state is (IDLE, WORKING, MASKING);
+type state is (IDLE, WORKING);
 signal cr_state : state ;
 
 begin
